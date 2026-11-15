@@ -1,0 +1,11 @@
+name: zz-shadow
+on:
+  pull_request:
+    types: [edited]
+permissions: {}
+jobs:
+  shadow:
+    name: Awaiting CICD label
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "PROBE_SHADOW job=Awaiting CICD label"
